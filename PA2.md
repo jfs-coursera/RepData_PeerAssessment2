@@ -1,7 +1,7 @@
 # Weather events: effects on population health and economic consequences 
 
 Author: jfs<br />
-Date: 20 Sep 2014
+Date: 09 Jan 2016
 
 ## Synopsis
 Weather can cause many issues. The most relevant ones are the effects on the
@@ -24,7 +24,7 @@ Some documentation is also available:
 - National Climatic Data center Storm Events [FAQ](https://d396qusza40orc.cloudfront.net/repdata/peer2_doc/NCDC%20Storm%20Events-FAQ%20Page.pdf)
 
 ### Loading the data
-Note: I that assume the file containing the raw data is in the working directory.
+Note: I assume that the file containing the raw data is in the working directory.
 
 We can read the data directly from the bz2 file. But the data file is rather
 large (47MB compressed, 535MB uncompressed!!!), so it may take a while to
@@ -323,7 +323,7 @@ ggplot(casualt, aes(x = reorder(event, -value), y = value)) +
        ggtitle(maintitle)
 ```
 
-<img src="figure/effectsonhealth.png" title="plot of chunk effectsonhealth" alt="plot of chunk effectsonhealth" style="display: block; margin: auto;" />
+<img src="figure/effectsonhealth-1.png" title="plot of chunk effectsonhealth" alt="plot of chunk effectsonhealth" style="display: block; margin: auto;" />
 
 Looking at the plot, there is no question, the most harmful weather event for
 the population by far is the tornado. Actually, this is the event that causes
@@ -405,7 +405,7 @@ ggplot(eco, aes(x = reorder(event, -value), y = value / 1e9)) +
        ggtitle(maintitle)
 ```
 
-<img src="figure/effectsoneconomy.png" title="plot of chunk effectsoneconomy" alt="plot of chunk effectsoneconomy" style="display: block; margin: auto;" />
+<img src="figure/effectsoneconomy-1.png" title="plot of chunk effectsoneconomy" alt="plot of chunk effectsoneconomy" style="display: block; margin: auto;" />
 
 The greatest economic consequences are caused by floods, followed by
 hurricanes, tornadoes and storm surges, especially when it comes to properties

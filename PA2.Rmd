@@ -29,7 +29,7 @@ Some documentation is also available:
 - National Climatic Data center Storm Events [FAQ](https://d396qusza40orc.cloudfront.net/repdata/peer2_doc/NCDC%20Storm%20Events-FAQ%20Page.pdf)
 
 ### Loading the data
-Note: I that assume the file containing the raw data is in the working directory.
+Note: I assume that the file containing the raw data is in the working directory.
 
 We can read the data directly from the bz2 file. But the data file is rather
 large (47MB compressed, 535MB uncompressed!!!), so it may take a while to
